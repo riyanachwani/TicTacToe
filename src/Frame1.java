@@ -25,62 +25,67 @@ public class Frame1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        btn8 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        btn3 = new javax.swing.JButton();
+        btn7 = new javax.swing.JButton();
+        btn1 = new javax.swing.JButton();
+        btn4 = new javax.swing.JButton();
+        reset = new javax.swing.JButton();
+        btn6 = new javax.swing.JButton();
+        btn2 = new javax.swing.JButton();
+        btn9 = new javax.swing.JButton();
+        btn5 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 400, 142, 142));
+        btn8.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        getContentPane().add(btn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 400, 142, 142));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 36)); // NOI18N
         jLabel1.setText("Tic Tac Toe");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 6, 220, 60));
 
-        jButton2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, 142, 142));
+        btn3.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        getContentPane().add(btn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, 142, 142));
 
-        jButton3.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 142, 142));
+        btn7.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        getContentPane().add(btn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 142, 142));
 
-        jButton4.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btn1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btn1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 142, 142));
+        getContentPane().add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 142, 142));
 
-        jButton5.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 142, 142));
+        btn4.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        getContentPane().add(btn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 142, 142));
 
-        jButton6.setBackground(new java.awt.Color(255, 204, 204));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton6.setText("RESET");
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, 90, 50));
+        reset.setBackground(new java.awt.Color(0, 204, 255));
+        reset.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        reset.setText("RESET");
+        reset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                resetActionPerformed(evt);
+            }
+        });
+        getContentPane().add(reset, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, 90, 50));
 
-        jButton7.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, 142, 142));
+        btn6.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        getContentPane().add(btn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, 142, 142));
 
-        jButton8.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 80, 142, 142));
+        btn2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        getContentPane().add(btn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 80, 142, 142));
 
-        jButton9.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 400, 142, 142));
+        btn9.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        getContentPane().add(btn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 400, 142, 142));
 
-        jButton10.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
-        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 142, 142));
+        btn5.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        getContentPane().add(btn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 142, 142));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background.jpeg"))); // NOI18N
@@ -88,10 +93,24 @@ public class Frame1 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btn1ActionPerformed
+
+    private void resetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetActionPerformed
+btn1.setText("");
+btn2.setText("");
+btn3.setText("");
+btn4.setText("");
+btn5.setText("");
+btn6.setText("");
+btn7.setText("");
+btn8.setText("");
+btn9.setText("");
+// TODO add your handling code here:
+    }//GEN-LAST:event_resetActionPerformed
 
     /**
      * @param args the command line arguments
@@ -119,27 +138,28 @@ public class Frame1 extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Frame1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Frame1().setVisible(true);
+                
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton btn1;
+    private javax.swing.JButton btn2;
+    private javax.swing.JButton btn3;
+    private javax.swing.JButton btn4;
+    private javax.swing.JButton btn5;
+    private javax.swing.JButton btn6;
+    private javax.swing.JButton btn7;
+    private javax.swing.JButton btn8;
+    private javax.swing.JButton btn9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton reset;
     // End of variables declaration//GEN-END:variables
 }
