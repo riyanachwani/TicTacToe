@@ -42,6 +42,11 @@ public class Frame1 extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btn8.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn8ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 400, 142, 142));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 36)); // NOI18N
@@ -49,9 +54,19 @@ public class Frame1 extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 6, 220, 60));
 
         btn3.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, 142, 142));
 
         btn7.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        btn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn7ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 142, 142));
 
         btn1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
@@ -63,6 +78,11 @@ public class Frame1 extends javax.swing.JFrame {
         getContentPane().add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 142, 142));
 
         btn4.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        btn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 142, 142));
 
         reset.setBackground(new java.awt.Color(0, 204, 255));
@@ -76,15 +96,35 @@ public class Frame1 extends javax.swing.JFrame {
         getContentPane().add(reset, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, 90, 50));
 
         btn6.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        btn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn6ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, 142, 142));
 
         btn2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 80, 142, 142));
 
         btn9.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn9ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 400, 142, 142));
 
         btn5.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
+        btn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 142, 142));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
@@ -94,8 +134,17 @@ public class Frame1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     
+    public int count=0;
+    
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-
+if(count%2==0){
+    btn1.setText("X");
+    count++;
+}
+else{
+    btn1.setText("O");   
+    count++;
+}
         // TODO add your handling code here:
     }//GEN-LAST:event_btn1ActionPerformed
 
@@ -112,10 +161,102 @@ btn9.setText("");
 // TODO add your handling code here:
     }//GEN-LAST:event_resetActionPerformed
 
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+if(count%2==0){
+    btn2.setText("X");
+    count++;
+}
+else{
+    btn2.setText("O");  
+    count++;
+}        // TODO add your handling code here:
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+if(count%2==0){
+    btn3.setText("X");
+    count++;
+}
+else{
+    btn3.setText("O");    
+    count++;
+}        // TODO add your handling code here:
+    }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+if(count%2==0){
+    btn4.setText("X");
+    count++;
+}
+else{
+    btn4.setText("O");   
+    count++;
+}        // TODO add your handling code here:
+    }//GEN-LAST:event_btn4ActionPerformed
+
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+if(count%2==0){
+    btn5.setText("X");
+    count++;
+}
+else{
+    btn5.setText("O");   
+    count++;
+}        // TODO add your handling code here:
+    }//GEN-LAST:event_btn5ActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+if(count%2==0){
+    btn6.setText("X");
+    count++;
+}
+else{
+    btn6.setText("O");    
+    count++;
+}        // TODO add your handling code here:
+    }//GEN-LAST:event_btn6ActionPerformed
+
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+if(count%2==0){
+    btn7.setText("X");
+    count++;
+}
+else{
+    btn7.setText("O");    
+    count++;
+}        // TODO add your handling code here:
+    }//GEN-LAST:event_btn7ActionPerformed
+
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+if(count%2==0){
+    btn8.setText("X");
+    count++;
+}
+else{
+    btn8.setText("O");
+count++;    
+}        // TODO add your handling code here:
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+if(count%2==0){
+    btn9.setText("X");
+    count++;
+}
+else{
+    btn9.setText("O");    
+    count++;
+}        // TODO add your handling code here:
+    }//GEN-LAST:event_btn9ActionPerformed
+
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        
+       
+        
+        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
