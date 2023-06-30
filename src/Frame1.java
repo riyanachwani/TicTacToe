@@ -1,3 +1,7 @@
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -7,13 +11,16 @@
  *
  * @author riyan
  */
-public class Frame1 extends javax.swing.JFrame {
+public class Frame1 extends javax.swing.JFrame implements ActionListener{
 
     /**
      * Creates new form Frame1
      */
     public Frame1() {
         initComponents();
+        btn1.addActionListener((ActionListener) this);
+        
+        
     }
 
     /**
@@ -137,14 +144,7 @@ public class Frame1 extends javax.swing.JFrame {
     public int count=0;
     
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-if(count%2==0){
-    btn1.setText("X");
-    count++;
-}
-else{
-    btn1.setText("O");   
-    count++;
-}
+
         // TODO add your handling code here:
     }//GEN-LAST:event_btn1ActionPerformed
 
@@ -254,6 +254,7 @@ else{
      */
     public static void main(String args[]) {
         
+        
        
         
         
@@ -303,4 +304,17 @@ else{
     private javax.swing.JLabel jLabel2;
     private javax.swing.JButton reset;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+         if(e.getSource()==btn1){
+            if(count%2==0){
+    btn1.setText("X");
+    count++;
+}
+else{
+    btn1.setText("O");   
+    count++;
+}
+        }}
 }
