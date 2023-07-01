@@ -290,6 +290,8 @@ else{
             }
         });
     }
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn1;
@@ -317,9 +319,10 @@ if((btn1.getText()=="X"&&btn2.getText()=="X"&&btn3.getText()=="X")||
        (btn4.getText()=="X"&&btn5.getText()=="X"&&btn6.getText()=="X")||
        (btn1.getText()=="X"&&btn4.getText()=="X"&&btn7.getText()=="X")){
         JOptionPane.showMessageDialog(this, "X Won");
-        res();
-        
-    }
+        dispose();  // Dispose the current JFrame
+               Frame1 f= new Frame1();
+               f.setVisible(true);
+                }
     else if((btn1.getText()=="O"&&btn2.getText()=="O"&&btn3.getText()=="O")||
        (btn1.getText()=="O"&&btn5.getText()=="O"&&btn9.getText()=="O")||
        (btn1.getText()=="O"&&btn4.getText()=="O"&&btn7.getText()=="O")||
@@ -328,8 +331,16 @@ if((btn1.getText()=="X"&&btn2.getText()=="X"&&btn3.getText()=="X")||
        (btn4.getText()=="O"&&btn5.getText()=="O"&&btn6.getText()=="O")||
        (btn1.getText()=="O"&&btn4.getText()=="O"&&btn7.getText()=="O")){
         JOptionPane.showMessageDialog(this, "O Won");
-        res();
-    }
+    dispose();  // Dispose the current JFrame
+               Frame1 f= new Frame1();
+               f.setVisible(true);
+        }
+    else if(count==8){
+    JOptionPane.showMessageDialog(this, "DRAW");    
+    dispose();  // Dispose the current JFrame
+               Frame1 f= new Frame1();
+               f.setVisible(true);
+        }
     }
     
 
@@ -343,6 +354,7 @@ btn6.setText("");
 btn7.setText("");
 btn8.setText("");
 btn9.setText("");
+count=0;
     }
 }
 
