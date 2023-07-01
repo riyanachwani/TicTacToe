@@ -1,6 +1,7 @@
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -19,8 +20,14 @@ public class Frame1 extends javax.swing.JFrame implements ActionListener{
     public Frame1() {
         initComponents();
         btn1.addActionListener((ActionListener) this);
-        
-        
+        btn2.addActionListener((ActionListener) this);
+        btn3.addActionListener((ActionListener) this);
+        btn4.addActionListener((ActionListener) this);
+        btn5.addActionListener((ActionListener) this);
+        btn6.addActionListener((ActionListener) this);
+        btn7.addActionListener((ActionListener) this);
+        btn8.addActionListener((ActionListener) this);
+        btn9.addActionListener((ActionListener) this);   
     }
 
     /**
@@ -144,7 +151,14 @@ public class Frame1 extends javax.swing.JFrame implements ActionListener{
     public int count=0;
     
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-
+if(count%2==0){
+    btn1.setText("X");
+    count++;
+}
+else{
+    btn1.setText("O");  
+    count++;
+}
         // TODO add your handling code here:
     }//GEN-LAST:event_btn1ActionPerformed
 
@@ -253,11 +267,6 @@ else{
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        
-        
-       
-        
-        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -290,6 +299,9 @@ else{
         });
     }
 
+    private void show(ActionEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn1;
     private javax.swing.JButton btn2;
@@ -307,14 +319,8 @@ else{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-         if(e.getSource()==btn1){
-            if(count%2==0){
-    btn1.setText("X");
-    count++;
+         //if(e.getSource()==btn1||e.getSource()==btn2||e.getSource()==btn3||e.getSource()==btn4||e.getSource()==btn5||e.getSource()==btn6||e.getSource()==btn7||e.getSource()==btn8||e.getSource()==btn9)
+         //{}
+    }
 }
-else{
-    btn1.setText("O");   
-    count++;
-}
-        }}
-}
+
