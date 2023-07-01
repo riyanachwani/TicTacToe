@@ -163,15 +163,7 @@ else{
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void resetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetActionPerformed
-btn1.setText("");
-btn2.setText("");
-btn3.setText("");
-btn4.setText("");
-btn5.setText("");
-btn6.setText("");
-btn7.setText("");
-btn8.setText("");
-btn9.setText("");
+res();
 // TODO add your handling code here:
     }//GEN-LAST:event_resetActionPerformed
 
@@ -299,9 +291,6 @@ else{
         });
     }
 
-    private void show(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn1;
     private javax.swing.JButton btn2;
@@ -319,8 +308,41 @@ else{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-         //if(e.getSource()==btn1||e.getSource()==btn2||e.getSource()==btn3||e.getSource()==btn4||e.getSource()==btn5||e.getSource()==btn6||e.getSource()==btn7||e.getSource()==btn8||e.getSource()==btn9)
-         //{}
+System.out.println(count);
+if((btn1.getText()=="X"&&btn2.getText()=="X"&&btn3.getText()=="X")||
+       (btn1.getText()=="X"&&btn5.getText()=="X"&&btn9.getText()=="X")||
+       (btn1.getText()=="X"&&btn4.getText()=="X"&&btn7.getText()=="X")||
+       (btn2.getText()=="X"&&btn5.getText()=="X"&&btn8.getText()=="X")||
+       (btn3.getText()=="X"&&btn6.getText()=="X"&&btn9.getText()=="X")||
+       (btn4.getText()=="X"&&btn5.getText()=="X"&&btn6.getText()=="X")||
+       (btn1.getText()=="X"&&btn4.getText()=="X"&&btn7.getText()=="X")){
+        JOptionPane.showMessageDialog(this, "X Won");
+        res();
+        
+    }
+    else if((btn1.getText()=="O"&&btn2.getText()=="O"&&btn3.getText()=="O")||
+       (btn1.getText()=="O"&&btn5.getText()=="O"&&btn9.getText()=="O")||
+       (btn1.getText()=="O"&&btn4.getText()=="O"&&btn7.getText()=="O")||
+       (btn2.getText()=="O"&&btn5.getText()=="O"&&btn8.getText()=="O")||
+       (btn3.getText()=="O"&&btn6.getText()=="O"&&btn9.getText()=="O")||
+       (btn4.getText()=="O"&&btn5.getText()=="O"&&btn6.getText()=="O")||
+       (btn1.getText()=="O"&&btn4.getText()=="O"&&btn7.getText()=="O")){
+        JOptionPane.showMessageDialog(this, "O Won");
+        res();
+    }
+    }
+    
+
+    private void res() {
+        btn1.setText("");
+btn2.setText("");
+btn3.setText("");
+btn4.setText("");
+btn5.setText("");
+btn6.setText("");
+btn7.setText("");
+btn8.setText("");
+btn9.setText("");
     }
 }
 
