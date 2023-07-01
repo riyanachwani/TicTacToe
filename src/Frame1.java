@@ -310,7 +310,6 @@ else{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-System.out.println(count);
 if((btn1.getText()=="X"&&btn2.getText()=="X"&&btn3.getText()=="X")||
        (btn1.getText()=="X"&&btn5.getText()=="X"&&btn9.getText()=="X")||
        (btn1.getText()=="X"&&btn4.getText()=="X"&&btn7.getText()=="X")||
